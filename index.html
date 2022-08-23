@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="Fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- stert search box -->
+    <div class="search-container">
+      <button class="close-button">
+      <i class="fas fa-times close-icon"></i>
+    </button>
+      <div class="search-box">
+      <input class="search-input" type="text" name="teza" placeholder=" جستجو " id="">
+      <button class="search-button">
+      <i class="fas fa-search search-icon"></i>
+    </button>
+    </div>
+    </div>
+    <!-- end search box -->
+    <!-- start nav -->
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">نماشا</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">خانه</li>
+            <li class="menu-list-item">فیلم ها</li>
+            <li class="menu-list-item">سریال ها</li>
+            <li class="menu-list-item">پرطرفدار ها</li>
+            <li class="menu-list-item">تازه ها</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img src="assets/img/profile.jpg" alt="" class="profile-picture" />
+          <div class="profile-text-container">
+            <span class="profile-text">حساب کاربری</span>
+            <i class="fas fa-caret-down profile-icon"></i>
+          </div>
+          <div class="profile-menu-container ">
+            <ul class="profile-menu">
+              <li class="profile-menu-item">
+                <a href="" class="profile-link">
+                  <i class="fas fa-list"></i>
+                  <span> لیست تماشا </span>
+                </a></li>
+              <li class="profile-menu-item">
+                <a href="" class="profile-link">
+                  <i class="fas fa-heart"></i>
+                  <span> علاقه مندی ها </span>
+                </a></li>
+              <li class="profile-menu-item">
+                <a href="" class="profile-link">
+                  <i class="fas fa-comment"></i>
+                  <span> نظرات </span>
+                </a></li>
+              <li class="profile-menu-item">
+                <a href="" class="profile-link ">
+                  <i class="fas fa-door-closed red"></i>
+                  <span class="red"> خروج </span>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="toggle">
+          <i class="fas fa-moon toggle-icon"></i>
+          <i class="fas fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+    <!-- start side bar -->
+    <div class="sidebar">
+      <i class="left-menu-icon fas fa-home"></i>
+      <i class="left-menu-icon fas fa-search search"></i>
+
+      <i class="left-menu-icon fas fa-user"></i>
+      <i class="left-menu-icon fas fa-bookmark"></i>
+      <i class="left-menu-icon fas fa-tv"></i>
+      <!-- <i class="left-menu-icon fas fa-hourglass-start"></i>
+      <i class="left-menu-icon fas fa-shopping-cart"></i> -->
+    </div>
+    <!-- end side bar -->
+    <!-- start featured part -->
+    <div class="container">
+      <div class="content-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('assets/img/f-1.jpg');
+          "
+        >
+          <img src="assets/img/f-t-1.png" class="featured-title" alt="" />
+          <p class="featured-desc">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد 
+          </p>
+          <button class="featured-button">تماشا</button>
+        </div>
+        <!-- end featured part -->
+
+        <!-- start new release -->
+        <h1 class="movie-list-title">تازه منتشر شده ها</h1>
+        <div class="swiper">
+          <!-- <div class="movie-list"> -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/1.jpeg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">او</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/2.jpeg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">جنگ ستارگان</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/3.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">طوفان</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/4.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">1917</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/5.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">انتقام جویان:پایان بازی</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/6.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">کینگ کونگ</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev" style="margin: -75px 0;"></div>
+          <div class="swiper-button-next" style="margin: -75px 0;"></div>
+          <!-- </div> -->
+          </div>
+          <!-- end new released part -->
+        <!-- start new release -->
+        <h1 class="movie-list-title">آینده</h1>
+        <div class="swiper">
+          <!-- <div class="movie-list"> -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/super-girl.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">سوپر گرل</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/batman.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">بتمن</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/7.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">بازی اندر</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/8.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">فراموشی</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/9.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">هابیت</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="movie-list-item">
+                <img
+                  src="assets/img/10.jpg"
+                  alt=""
+                  class="movie-list-item-img"
+                />
+                <span class="movie-list-item-title">سررسید</span>
+                <p class="movie-list-desc">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </p>
+                <button class="movie-list-item-button">تماشا</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev" style="margin: -75px 0;"></div>
+          <div class="swiper-button-next" style="margin: -75px 0;"></div>
+           <!-- </div> -->
+          </div>
+          <!-- end new released part -->
+              <!-- start featured part -->
+              <div
+              class="featured-content"
+              style="
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+                  url('assets/img/f-2.jpg');
+              "
+            >
+              <img src="assets/img/f-t-2.png" class="featured-title" alt="" />
+              <p class="featured-desc">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد 
+              </p>
+              <button class="featured-button">تماشا</button>
+            </div>
+        <!-- end featured part -->
+                <!-- start new release -->
+                <h1 class="movie-list-title">پرطرفدار ها</h1>
+                <div class="swiper">
+                  <!-- <div class="movie-list"> -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/john wick.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">جان ویک</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/11.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">کیک اس 2</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/12.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">ایموجی ها</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/13.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">1920</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/14.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">مسیر های شکوه</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/15.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">لگو بتمن</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev" style="margin: -75px 0;"></div>
+                  <div class="swiper-button-next" style="margin: -75px 0;"></div>
+                  <!-- </div> -->
+                  </div>
+                  <!-- end new released part -->
+                <!-- start new release -->
+                <h1 class="movie-list-title">تازه ها</h1>
+                <div class="swiper">
+                  <!-- <div class="movie-list"> -->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/16.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">1920:لندن</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/17.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">آکوامن</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/18.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">فری تیل</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/19.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">مرد عنکبوتی</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/dune.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">تپه</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="movie-list-item">
+                        <img
+                          src="assets/img/revanant.jpg"
+                          alt=""
+                          class="movie-list-item-img"
+                        />
+                        <span class="movie-list-item-title">پیشگام</span>
+                        <p class="movie-list-desc">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                        </p>
+                        <button class="movie-list-item-button">تماشا</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev" style="margin: -75px 0;"></div>
+                  <div class="swiper-button-next" style="margin: -75px 0;"></div>                  
+                  <!-- </div> -->
+                  </div>
+                  <!-- end new released part -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
